@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Available To Buy
+{% endblock %}
+
+{% block content %}
+ 
+
+<link rel="stylesheet" href="css/availableToBuy.css">
+
+<script src="js/availableToBuy.js"></script>
+
+
+<script type="text/javascript">
+    checkConnection()
+</script>
+
+<div style="min-height: 78vh;">
+
+    <div class="alert " role="alert" id="notifyUser">
+    </div>
+
+    <div id="formForTakingLocationId">
+    <form id="inputLocationIdForm" method="post" onsubmit="fetchPropertiesAvailabletoBuy(event)">
+
+        <input type="text" id="inputLocationId" placeholder="Enter Location" required>
+
+        <button type="submit"> Get Sales </button>
+
+    </form>
+    </div>
+
+
+    <div id="salesTable" style="display:none;">
+
+        <table>
+            <caption>Properties Available To Buy On Location : <span id="locationId"></span></caption>
+            <thead>
+                <th> S.No </th>
+                <th> Sale Id </th>
+                <th> Owner </th>
+                <th> Property Id </th>
+                <th> Price [in Ether ] </th>
+
+                <th> Options </th>
+
+            </thead>
+            <tbody id="salesTableBody"></tbody>
+        </table>
+
+
+    </div>
+
+    <div id="prompt-container-backcover">
+        <div id="prompt-container">
+            <label for="prompt-input">Enter Price [in Ether]:</label>
+            <input type="number" id="prompt-input">
+            <br><br>
+            <button id="prompt-ok">OK</button>
+            <button id="prompt-cancel">Cancel</button>
+        </div>
+    </div>
+
+
+</div>
+
+
+    {% endblock %}

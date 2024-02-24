@@ -1,0 +1,4 @@
+Flask==2.2.3 
+pymongo==4.3.3 
+gridfs-fuse
+web3==5.31.3

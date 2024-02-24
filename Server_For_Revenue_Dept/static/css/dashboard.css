@@ -1,0 +1,264 @@
+body {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+
+
+.pdf-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+.pdf-popup iframe {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  border: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+
+.close-btn {
+  font-size: 65px;
+  float: right;
+  color: red;
+}
+
+
+
+
+#propertiesTable {
+  margin: 50px auto;
+}
+
+table {
+
+  margin: auto;
+  border-collapse: collapse;
+  width: 85%;
+  /*! max-width: 800px; */
+}
+
+table th,
+table td {
+  padding: 8px;
+  text-align: left;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #c0bdbd;
+}
+
+table caption {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  caption-side: top;
+}
+
+table thead th {
+  text-align: center;
+}
+
+table tbody tr:hover {
+  background-color: #d8d8d8;
+}
+
+/* 
+tr td:first-child:before {
+  counter-increment: Serial;
+  content: counter(Serial);
+
+} */
+
+
+tr>td:nth-child(1) {
+  text-align: center;
+}
+
+
+
+tr>td:nth-child(2) {
+  text-align: center;
+}
+
+
+tr>td:nth-child(3) {
+  text-align: center;
+}
+
+
+tr>td:nth-child(4) {
+  text-align: center;
+}
+
+
+
+tr>td:nth-child(5) {
+  text-align: center;
+}
+
+
+
+tr>td:nth-child(6) {
+  text-align: center;
+}
+
+
+
+tr>td:nth-child(7) {
+  text-align: center;
+}
+
+
+
+tr>td:nth-child(8) {
+  text-align: center;
+}
+
+
+
+tr>td:nth-child(9) {
+  text-align: center;
+}
+
+
+tr>td:nth-child(7) button {
+  background: #3bff63;
+  width: 80px;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+tr>td:nth-child(9) button {
+  background: #3ba3ff;
+  width: 80px;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+
+}
+
+
+tr>td:nth-child(9) button:hover {
+
+  border-radius: 0px;
+  background: #ff0048;
+
+
+}
+
+
+
+tr>td:nth-child(7) button:hover {
+
+  border-radius: 0px;
+  background: #ff0048;
+}
+
+
+
+
+
+/* Set the position of the div to be at the top */
+
+
+
+
+header {
+  margin: 0px;
+}
+
+
+
+/* Center the h1 heading inside the div */
+
+
+/* Position the button to the top right corner of the div */
+
+
+.heading-box{
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  
+}
+
+.heading{
+  margin-left: 350px;
+}
+
+#nameOfUserButton {
+  margin-left: 250px;
+  color: #f4f4f4;
+  font-size: 20px;
+  background: #000000;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 20px;
+}
+
+#logoutbutton {
+  background-color: #000000;
+ border-radius: 20px;
+  
+  font-size: 20px;
+  padding: 5px 10px;
+  border: none;
+}
+
+#logoutbutton a {
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+.pdfButton{
+  background-color: #9066ee;
+  border: none;
+  font-size: 17px;
+  padding: 4px 15px;
+  color: white;
+  font-weight: 502;
+  box-shadow: 2px 2px 2px gray;
+}
+
+
+.accept {
+  background-color: #1ef23d;
+  border: none;
+  font-size: 17px;
+  padding: 4px 15px;
+  color: white;
+  font-weight: 502;
+  box-shadow: 2px 2px 2px gray;
+}
+
+
+.reject {
+  background-color: #f02c39;
+  border: none;
+  font-size: 17px;
+  padding: 4px 15px;
+  color: white;
+  font-weight: 502;
+  box-shadow: 2px 2px 2px gray;
+}

@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title> Dashboard </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+
+    <script src="{{ url_for('static', filename='js/web3.min.js') }}"></script>
+
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+
+
+</head>
+
+<body onload="checkConnection()">
+
+    <header>
+        <div class="heading-box">
+            <h1 class="heading"> Welcome To Revenue Department Portal</h1>
+            <div class="btns">
+                <button id="nameOfUserButton">
+                    <span id="nameOfUser">  </span>
+                </button>
+                <button id="logoutbutton"> <a href="/logout"> Logout </a></button>
+            </div>
+            
+        </div>
+    </header>
+
+    <div class="alert " role="alert" id="notifyUser">
+    </div>
+
+
+
+
+    <div id="propertiesTable" style="display:block;">
+
+        <table>
+            <caption>Welcom To Revenue Department <span id="revenueDeptId"></span></caption>
+            <thead>
+                <th> Property Id </th>
+                <th> Location Id</th>
+                <th> Survey Number</th>
+                <th> Area </th>
+                <th> Docs </th>
+                <th> State </th>
+            </thead>
+            <tbody id="propertiesTableBody"></tbody>
+        </table>
+    </div>
+
+
+    <div class="pdf-popup">
+        <iframe id="pdf-frame" src="" frameborder="0"></iframe>
+        <div class="close-btn" onclick="closePopup()">X</div>
+    </div>
+
+    <div id="loadingDiv" style="display: none;">
+        <span id="loadingText"> Connecting to Wallet ... </span>
+        <div id="loading" class="spinner-border text-primary" role="status">
+            <span class="sr-only"></span>
+        </div>
+    </div>
+
+</body>
+
+</html>

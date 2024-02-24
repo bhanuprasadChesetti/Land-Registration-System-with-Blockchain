@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Dashboard
+{% endblock %}
+
+{% block content %}
+
+
+<link rel="stylesheet" href="css/register.css">
+<link rel="stylesheet" href="css/formAlignment.css">
+
+<script src="js/register.js"></script>
+
+
+<script type="text/javascript">
+    checkConnection()
+</script>
+
+<div style="min-height: 83vh;">
+
+    <div class="alert " role="alert" id="notifyUser">
+    </div>
+
+
+    
+
+    <div id="registerationFormDiv">
+
+        <h3>  Register </h3>
+        <div style="border-top: 1px solid;margin-bottom: 13px;"></div>
+        <form class="pure-form pure-form-aligned" method="post" onsubmit="registerUser(event)">
+            <fieldset>
+
+                <div class="pure-control-group">
+                    <label for="firstName"> First Name </label>
+                    <label class="colonInForm"> :</label>
+                    <input type="text" id="firstName" placeholder="First name" required>
+
+                </div>
+
+                <div class="pure-control-group">
+                    <label for="lastName"> Last Name </label>
+                    <label class="colonInForm"> :</label>
+                    <input type="text" id="lastName" placeholder="Last name" required>
+                </div>
+
+
+
+                <div class="pure-control-group">
+                    <label for="dob"> Date Of Birth </label>
+                    <label class="colonInForm"> :</label>
+                    <input type="date" id="dob" required>
+                </div>
+
+                <div class="pure-control-group">
+                    <label for="aadharNo"> Aadhar Number </label>
+                    <label class="colonInForm"> :</label>
+                    <input type="text" id="aadharNo" placeholder="Aadhar number" required>
+                </div>
+
+
+
+                <div class="pure-controls" style="margin: 26px 0px 0px 76px;">
+                    <label for="cb" class="pure-checkbox">
+                        <input id="cb" type="checkbox" required> I've read the terms and conditions
+                    </label>
+
+                    <a 
+                        class="pure-button pure-button-primary" id="backButton"
+                        href="/"
+                        > Back </a>
+
+                    <button type="submit"
+                        class="pure-button pure-button-primary" id="registerButton"> Register </button>
+                </div>
+            </fieldset>
+        </form>
+
+
+
+
+
+    </div>
+
+</div>
+
+
+
+{% endblock %}

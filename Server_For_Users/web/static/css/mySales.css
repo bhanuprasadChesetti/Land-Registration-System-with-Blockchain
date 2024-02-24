@@ -1,0 +1,300 @@
+/* CSS  for Table */
+body {
+  counter-reset: Serial;
+}
+
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+  width: 85%;
+}
+
+table th,
+table td {
+  padding: 8px;
+  text-align: left;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+table caption {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  caption-side: top;
+}
+
+table thead th {
+  text-align: center;
+}
+
+
+
+tr td:first-child:before {
+  counter-increment: Serial;
+  content: counter(Serial);
+
+}
+
+
+#salesTable tr>td:nth-child(1) {
+  text-align: center;
+}
+
+
+
+#salesTable tr>td:nth-child(2) {
+  text-align: center;
+}
+
+
+#salesTable tr>td:nth-child(3) {
+  text-align: center;
+}
+
+
+#salesTable tr>td:nth-child(4) {
+  text-align: center;
+}
+
+
+
+#salesTable tr>td:nth-child(5) {
+  text-align: center;
+}
+
+
+
+#salesTable tr>td:nth-child(6) {
+  text-align: center;
+  font-size: 17px;
+}
+
+
+
+#salesTable tr>td:nth-child(7) {
+  text-align: center;
+}
+
+
+
+#salesTable tr>td:nth-child(8) {
+  text-align: center;
+}
+
+
+#requestedUsersOfaSale table{
+  width: 56%;
+}
+
+#requestedUsersOfaSale tr>td:nth-child(1){
+  text-align: center;
+}
+
+
+#requestedUsersOfaSale tr>td:nth-child(2){
+  text-align: center;
+}
+
+
+#requestedUsersOfaSale tr>td:nth-child(3){
+  text-align: center;
+}
+
+
+#requestedUsersOfaSale tr>td:nth-child(4){
+  text-align: center;
+}
+
+
+/* Buttons in My Properties available to sell */
+
+.buyersButton{
+  background: #3b5aff;
+  width: 80px;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+
+
+.cancelSaleButton{
+
+  background: #ff3b3b;
+  width: 80px;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+
+}
+
+
+
+.cancelAcceptanceRequestButton{
+  border: none;
+  border-radius: 7px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  background: #ea3c3ced;
+}
+
+
+
+
+.reactivateSale{
+  border: none;
+  border-radius: 7px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #00f800;
+}
+
+
+
+
+.cancelSaleButton:hover,
+.buyersButton:hover,
+.cancelAcceptanceRequestButton:hover,
+.reactivateSale:hover
+{
+
+  border-radius: 0px;
+  box-shadow: 2px 2px 2px 0px gray;
+}
+
+
+/* css fro requested users of a property */
+
+.acceptButton{
+  border: none;
+background: #00f800;
+color: white;
+font-size: 18px;
+font-weight: bold;
+padding: 2px 10px;
+border-radius: 5px;
+margin: 0px 20px;
+
+}
+.rejectButton{
+  border: none;
+background: #f80000;
+color: white;
+font-size: 18px;
+font-weight: bold;
+padding: 2px 10px;
+border-radius: 5px;
+margin: 0px 20px;
+
+}
+
+.buyerCanceledPurchaseRequest{
+
+}
+
+.acceptedPurchaseRequest{
+
+}
+
+.canceledPurchaseRequest{
+
+}
+
+.buyerRejectedAcceptanceRequest{
+
+}
+
+
+
+.acceptButton:hover,
+.rejectButton:hover
+{
+  border-radius:0px;
+  box-shadow: 2px 2px 2px 0px gray;
+}
+
+
+/* css of Sale State  */
+.saleStateActive{
+  color: #001cff;
+}
+
+.saleStateAccepted{
+  color: rgb(8, 0, 251);
+}
+
+
+.saleStateClosed{
+  color: red;
+}
+
+.saleStateSuccess{
+  color: green;}
+
+
+.saleStateDeadlineOverForPayment{
+  color: rgb(218, 224, 218);
+}
+
+.saleStateCanceledAcceptanceRequestGiven{
+  color: rgb(237, 103, 40);
+}
+
+.saleStateBuyerRejectedAcceptanceRequest{
+  color: rgb(240, 17, 17);
+}
+
+
+
+/* Accepted for no one */
+.acceptedForNoONe{
+  color: gray;
+}
+
+/* Notify User  */
+#notifyUser {
+  width: fit-content;
+  margin: auto;
+  display: none;
+  margin-top: 30px;
+  margin-bottom: 3px;
+}
+
+
+
+
+#requestedUsersOfaSale,
+#salesTable{
+  min-height: 77vh;
+  margin-top: 25px;
+}
+
+
+#backToSalesTableButton{
+  float: right;
+  background: #b3a7a7;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  padding: 2px 15px;
+}
+
+#backToSalesTableButton:hover{
+  background-color: #27a8f6;
+border-radius: 0px;
+box-shadow: 2px 2px 2px gray;
+}

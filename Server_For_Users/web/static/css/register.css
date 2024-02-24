@@ -1,0 +1,76 @@
+#navBar{
+    display: none;
+}
+
+
+#connectedAccount{
+    font-size: 20px;
+color: #08ff00;
+}
+
+#registerationFormDiv {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    margin-top: auto;
+    margin-top: 30px;
+    border: 1px solid;
+    background-color: oldlace;
+}
+
+
+#registerationFormDiv h3 {
+    position: relative;
+text-align: center;
+font-size: 26px;
+margin: 20px;
+color: #ff00b3;
+}
+
+
+.colonInForm {
+    width: 0px !important;
+    margin: 0 12px 0 -10px !important;
+}
+
+
+#registerationFormDiv button[type="submit"]{
+    box-shadow: 0px 0px 0px gray !important;
+ }
+ 
+ 
+ #registerationFormDiv button[type="submit"]:hover{
+    box-shadow: 2px 2px 2px gray !important;
+    background: green;
+ }
+
+
+
+
+#registerationFormDiv form{
+    padding-right: 52px;
+}
+
+#notifyUser {
+    width: fit-content;
+    margin: auto;
+    display: none;
+    margin-top: 15px;
+    margin-bottom: -7px;
+}
+
+
+
+#backButton{
+    background-color: gray;
+}
+
+#backButton:hover{
+    text-decoration: none;
+    box-shadow: 2px 2px 2px gray !important;
+    background: green;
+}
+
+#registerButton{
+    margin-left: 114px;
+}

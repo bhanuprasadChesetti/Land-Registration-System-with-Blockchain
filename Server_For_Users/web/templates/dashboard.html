@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Dashboard
+{% endblock %}
+
+{% block content %}
+
+
+
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="css/formAlignment.css">
+
+<script src="js/dashborad.js"></script>
+
+
+<script type="text/javascript">
+    checkConnection()
+</script>
+
+<div style="min-height: 76vh;">
+
+    <div class="alert " role="alert" id="notifyUser">
+    </div>
+
+    <div id="propertiesTable" style="display:block;margin:35px;">
+
+        <table>
+            <caption> Your Properties </caption>
+            <thead>
+                <th> S.No </th>
+                <th> Property Id </th>
+                <th> Location Id</th>
+                <th> Revenue Department Id</th>
+                <th> Survey Number</th>
+                <th> Area </th>
+                <th style="width: 110px;"> Docs </th>
+                <th> State </th>
+                <th style="width: 100px;"> Sold </th>
+            </thead>
+            <tbody id="propertiesTableBody"></tbody>
+        </table>
+    </div>
+
+    <div id="addProperty" style="display:none;">
+
+        <h3> Add Your Property </h3>
+
+        <form class="pure-form pure-form-aligned" method="post" onsubmit="addProperty(event)">
+            <fieldset>
+
+                <div class="pure-control-group">
+                    <label for="revenueDeptId">Revenue Dept Id </label>
+                    <label class="colonInForm"> :</label>
+                    <input id="revenueDeptId" type="number" placeholder="Revenue Dept Id" required>
+
+                </div>
+
+                <div class="pure-control-group">
+                    <label for="location"> Location</label>
+                    <label class="colonInForm"> :</label>
+                    <input id="location" type="number" placeholder="Location Id" required>
+
+                </div>
+
+
+
+                <div class="pure-control-group">
+                    <label for="suveyNumber"> Survey Number </label>
+                    <label class="colonInForm"> :</label>
+                    <input id="suveyNumber" type="number" placeholder="Survey Number" required>
+
+                </div>
+
+                <div class="pure-control-group">
+                    <label for="area"> Area </label>
+                    <label class="colonInForm"> :</label>
+                    <input id="area" type="number" placeholder="Area" required>
+
+                </div>
+
+                <div class="pure-control-group">
+                    <label for="registrationDoc"> Documents </label>
+                    <label class="colonInForm"> :</label>
+                    <input type="file" id="registrationDoc" required>
+
+                </div>
+
+                <div class="pure-controls" style="margin: 26px 0px 0px 110px;">
+                    <label for="cb" class="pure-checkbox">
+                        <input id="cb" type="checkbox" required> I've read the terms and conditions
+                    </label>
+
+                    <button style="margin-left: 80px;box-shadow: 2px 2px 2px 0px rgba(128, 128, 128, 1);" type="submit"
+                        class="pure-button pure-button-primary"> Add </button>
+                </div>
+            </fieldset>
+        </form>
+
+
+
+
+
+    </div>
+
+
+    <div class="pdf-popup">
+        <iframe id="pdf-frame" src="" frameborder="0"></iframe>
+        <div class="close-btn" onclick="closePopup()">X</div>
+    </div>
+
+
+    <div id="prompt-container-backcover">
+    <div id="prompt-container">
+        <label for="prompt-input">Enter Price [in Ether]:</label>
+        <input type="number" id="prompt-input">
+        <br><br>
+        <button id="prompt-ok">OK</button>
+        <button id="prompt-cancel">Cancel</button>
+    </div>
+    </div>
+
+</div>
+
+
+{% endblock %}

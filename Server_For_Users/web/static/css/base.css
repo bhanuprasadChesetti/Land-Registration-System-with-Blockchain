@@ -1,0 +1,106 @@
+body {
+  background: #ebebeb !important;
+}
+
+
+
+header {
+  margin: 0px;
+}
+
+header div {
+  background: #000000;
+  padding: 1px;
+  color: #fafafa;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 35px !important;
+  /*! color: #f9003a; */
+}
+
+#nameOfUser {
+  /*! background: #d537ecd6 !important; */
+  position: relative;
+  top: -2px;
+  right: -54px;
+}
+
+
+#navBar {
+  background: #111111d1;
+  ;
+  width: 100%;
+  height: 53px;
+}
+
+
+
+.dashboardLinks {
+  margin-right: 1px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+  float: left;
+  height: 53px;
+  /*! background-color: #e0e0e0; */
+  color: #f4f4f4;
+}
+
+.dashboardLinks:hover,
+.addPropertyButtonDiv:hover{
+  text-decoration: underline;
+  color: white;
+}
+
+
+#addPropertyButtonDiv{
+  background: none;
+}
+
+
+
+
+#nameOfUser {
+  background: rgb(91, 91, 91) !important;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: fit-content;
+  font-size: 18px;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-style: italic;
+  font-weight: bolder;
+  padding: 0px 20px;
+}
+
+
+#nameOfUser:hover {
+  background-color: rgb(57, 55, 55) !important;
+  /*! border-radius: 0px; */
+  /*! border: 1px solid; */
+}
+
+
+#loadingDiv {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #cdcbc9e0;
+  z-index: 9999;
+  text-align: center;
+  padding-top: 15%;
+  font-size: 45px;
+}
+
+#loading {
+  font-size: 15px;
+}

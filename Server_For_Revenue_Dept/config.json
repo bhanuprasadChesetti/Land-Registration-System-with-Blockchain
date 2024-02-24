@@ -1,0 +1,14 @@
+{
+
+    "Ganache_Url" : "<Ganache server URL [default:http://127.0.0.1:7545]>",
+
+    "NETWORK_CHAIN_ID": 5777,
+
+    "Mongo_Db_Url": "MongoDB Server URL [default: mongodb://localhost:27017]",
+
+    "Secret_Key": "RevenueDept$123",
+
+    "Address_Used_To_Deploy_Contract": "<Public address used to deploy the contracts to block chain>",
+    
+    "Admin_Password": "12345678"
+}

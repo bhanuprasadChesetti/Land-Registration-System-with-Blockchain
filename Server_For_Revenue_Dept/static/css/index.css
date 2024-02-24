@@ -1,0 +1,97 @@
+header {
+    margin: 0px;
+}
+
+header div {
+    background: #000000;
+    padding: 1px;
+    color: #fafafa;
+    height: 72px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 35px !important;
+    margin-top: 10px;
+}
+
+
+#loadingDiv {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e1e1e1e5;
+    z-index: 9999;
+    text-align: center;
+    padding-top: 15%;
+    
+}
+#loadingText{
+    font-size: 45px;
+}
+#loading {
+    font-size: 15px;
+}
+
+
+#notifyUser {
+    width: fit-content;
+    top: 89px;
+    margin: auto;
+    display: none;
+    font-size: 25px;
+    /*! height: fit-content; */
+  }
+
+
+#connectToBlockchainDiv{
+    
+    /*! background: red; */
+    width: fit-content;
+    padding: 10px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+
+#connectToBlockchainDiv h2{
+
+}
+
+#connectToBlockchainDiv button{
+margin: auto;
+display: block;
+padding: 0px 10px;
+font-size: 23px;
+height: 35px;
+margin-top: 10px;
+background: #59fd59;
+border: none;
+box-shadow: 2px 2px 2px gray;
+color: white;
+font-weight: 598
+}
+
+
+
+#passwordDiv {
+    width: fit-content;
+    margin: auto;
+    margin-top: 100px;
+}
+
+
+#passwordDiv button{
+    display: block;
+    margin: 10px auto;
+    font-size: 20px;
+    padding: 2px 10px;
+    font-weight: 501;
+    background: rgb(12, 246, 12);
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 2px gray;
+}

@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block title %}
+My Sales
+{% endblock %}
+
+{% block content %}
+
+
+<link rel="stylesheet" href="css/mySales.css">
+
+<script src="js/mySales.js"></script>
+
+<script type="text/javascript">
+    checkConnection()
+</script>
+
+<div>
+
+    <div class="alert " role="alert" id="notifyUser">
+    </div>
+
+    <div id="salesTable" style="display:block;">
+
+        <table>
+            <caption> Properties Available To Sell </caption>
+            <thead>
+                <th> S.No </th>
+                <th> Sale Id </th>
+                <th> Property Id </th>
+                <th> Price [in Ether ] </th>
+                <th> Accepted For </th>
+                <th> State </th>
+                <th> Requested Users </th>
+                <th> Cancel Sale </th>
+
+            </thead>
+            <tbody id="salesTableBody"></tbody>
+        </table>
+    </div>
+
+ 
+
+    <div id="requestedUsersOfaSale" style="display: none;">
+
+  
+        
+        <table>
+            <caption>
+                Requested Users for Property ID : <span id="propertyId"></span> 
+                <button onclick="toggleSalesAndRequestedUsersTables()" id="backToSalesTableButton"> Back </button>    
+    
+            </caption>
+            <thead>
+                <th> S.No </th>
+                <th> Requested User </th>
+                <th> Price Offered </th>
+
+                <th> Options </th>
+            </thead>
+            <tbody id="requestedUsersOfaSaleTableBody">
+
+
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+
+
+</div>
+
+
+{% endblock %}

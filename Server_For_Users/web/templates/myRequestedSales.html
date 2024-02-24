@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Requested Sales
+{% endblock %}
+
+{% block content %}
+
+
+<link rel="stylesheet" href="css/myRequestedSales.css">
+
+<script src="js/myRequestedSales.js"></script>
+
+<script type="text/javascript">
+    checkConnection()
+</script>
+
+<div style="min-height: 78vh;">
+      
+
+    <div class="alert " role="alert" id="notifyUser">
+    </div>
+
+    
+  
+
+    <div id="salesTable" style="display:block;">
+        
+        <table>
+            <caption>Properties Requested To buy </caption>
+            <thead>
+                <th> S.No </th>
+                <th> Sale Id </th>
+                <th> Property Id </th>
+                <th> Price Set[in Ether]</th>
+                <th> Price We Offered</th>
+                <th> State </th>
+                <th> Options </th>
+            </thead>
+            <tbody id="salesTableBody"></tbody>
+        </table>
+    </div>
+
+    <div id="prompt-container-backcover">
+        <div id="prompt-container">
+            <label for="prompt-input">Enter Offered Price [in Ether]:</label>
+            <input type="number" id="prompt-input">
+            <br><br>
+            <button id="prompt-ok">OK</button>
+            <button id="prompt-cancel">Cancel</button>
+        </div>
+    </div>
+
+
+</div>
+
+
+{% endblock %}
+
+
+    

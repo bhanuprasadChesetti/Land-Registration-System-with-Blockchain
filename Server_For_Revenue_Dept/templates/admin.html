@@ -1,0 +1,132 @@
+<htmL>
+
+<head>
+
+    <title> Admin </title>
+
+    
+
+    <script src="{{ url_for('static', filename='js/contractsDetails.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/web3.min.js') }}"></script>
+
+    <script src="{{ url_for('static', filename='js/admin.js') }}"></script>
+
+
+    <!-- bootsrarp -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/bootstrap.min.css') }}">
+    <script src="{{ url_for('static', filename='bootstrap/jquery-3.3.1.slim.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='bootstrap/popper.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='bootstrap/bootstrap.min.js') }}"></script>
+
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/formAlignment.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/admin.css') }}">
+    
+
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1> Welcome To Revenue Department Portal</h1>
+        </div>
+    </header>
+
+    <div class="alert " role="alert" id="notifyUser">
+    </div>
+
+    <div id="connectToBlockchainDiv" style="display: block;">
+        <h2> Connect Your Wallet </h2>
+        <button onclick="connectToBlockchain()"> Connect</button>
+    </div>
+    <br><br>
+
+    <div id="passwordDiv" style="display: none;">
+
+        <input type="text" placeholder="Enter Password" value="12345678" id="password">
+
+        <button onclick="login()"> Login </button>
+
+    </div>
+
+
+    <div id="dashboardDiv" style="display: none;">
+
+        <div id="addEmployee">
+
+            <h3> &nbsp;&nbsp;&nbsp; Add Employee To Revenue Department &nbsp;&nbsp;&nbsp; </h3>
+
+            
+            <form class="pure-form pure-form-aligned" id="addEmployeeForm" method="post" onsubmit="addEmployee(event)">
+                <fieldset>
+
+                    <div class="pure-control-group">
+                        <label for="employeeWallet"> Employee Wallet </label>
+                        <label class="colonInForm"> :</label>
+                        <input type="text" id="employeeWallet" placeholder="Enter Wallet" required>
+
+                    </div>
+
+                    <div class="pure-control-group">
+                        <label for="password"> Password </label>
+                        <label class="colonInForm"> :</label>
+                        <input type="text" id="password" placeholder="Enter password"  value='12345678' required>
+                    </div>
+
+                    <div class="pure-control-group">
+                        <label for="firstname"> First Name </label>
+                        <label class="colonInForm"> :</label>
+                        <input type="text" id="firstname" placeholder="Enter First name" required>
+                    </div>
+
+                    <div class="pure-control-group">
+                        <label for="lastName"> Last Name </label>
+                        <label class="colonInForm"> :</label>
+                        <input type="text" id="lastName" placeholder="Enter Last name" required>
+                    </div>
+
+
+
+                    <div class="pure-control-group">
+                        <label for="revenueDeptId"> Revenue Dept Id</label>
+                        <label class="colonInForm"> :</label>
+                        <input type="number" id="revenueDeptId" placeholder="Enter Revenue Dept Id" required>
+                    </div>
+
+
+
+
+                    <div class="pure-controls" id="formFotter">
+                        <label for="cb" class="pure-checkbox" style="margin-left: -60px;">
+                            <input id="cb" type="checkbox" required> I've read the terms and conditions
+                        </label>
+
+                        <button type="submit" 
+                                class="pure-button pure-button-primary" 
+                                id="addEmployeeButton"
+                                > 
+                            Add
+                        </button>
+                    </div>
+                </fieldset>
+            </form>
+
+        </div>
+
+        <div id="mapRevenueDept">
+
+
+        </div>
+    </div>
+
+
+    <div id="loadingDiv" style="display: none;">
+        <span id="loadingText"> Connecting to Wallet ... </span>
+        <div id="loading" class="spinner-border text-primary" role="status">
+            <span class="sr-only"></span>
+        </div>
+    </div>
+</body>
+
+</htmL>
