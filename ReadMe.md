@@ -197,10 +197,8 @@ This project contains mainly two steps:
 
 ## Usage
 
-**Demo Video:**   <br>      
-<video width="800px" height="400px" controls="controls">
-<source src="https://youtu.be/CUQMihkrR0I" type="video/mp4" />
-</video>
+[Demo Video](https://youtu.be/CUQMihkrR0I) <br>      
+
 
 
 **Screen shorts:** <br>
