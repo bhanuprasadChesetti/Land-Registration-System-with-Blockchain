@@ -7,6 +7,7 @@
    - [Drawbacks of traditional system](#how-it-works)
    - [How it works](#drawbacks-of-the-traditional-system)
 - [Tech Stack & Tools](#tech-stack--tools)
+- [Key Features](#key-features)
 - [Installation](#installation)
 - [Usage](#usage)
 
@@ -72,6 +73,14 @@ This project contains mainly two steps:
 * Ganache
 * Metamask
 ```
+
+## Key Features:
+
+- **Auction System**: Landowners can list their properties for sale and set their desired price through an auction mechanism.
+- **Global Visibility**: Properties available for sale are visible to all users worldwide, allowing interested buyers to view and make offers.
+- **Buyer Interaction**: Prospective buyers can submit buy requests with their offer prices, initiating the negotiation process.
+- **Seller Decision-Making**: Landowners have the flexibility to review buy requests and select preferred buyers and offered prices.
+- **Secure Transaction**: Upon acceptance of the transfer/buying proposal, buyers send Ether coins as payment, and ownership is seamlessly transferred.
 
 ## Installation
 
